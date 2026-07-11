@@ -1,0 +1,6 @@
+{
+  "name": "Hove Construction",
+  "description": "A premium, minimalist website for Hove Construction, showcasing high-end residential, commercial, and design-build projects with clean architectural aesthetics.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
