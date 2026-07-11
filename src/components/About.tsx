@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ShieldCheck, HardHat, Eye } from 'lucide-react';
-import { VALUES_DATA } from '../data';
+import { VALUES_DATA, ABOUT_IMAGE } from '../data';
 
 export default function About() {
   const iconMap = [
@@ -22,17 +22,34 @@ export default function About() {
                 OUR STORY
               </span>
             </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-gray-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-gray-900 leading-tight mb-8">
               A Legacy of Steel, Concrete & Vision.
             </h2>
+            <div className="relative">
+              <div className="aspect-[4/5] w-full overflow-hidden border border-gray-200 shadow-sm">
+                <img
+                  src={ABOUT_IMAGE}
+                  alt="Hove Construction craftsman detailing architectural blueprints on site"
+                  className="w-full h-full object-cover"
+                  loading="lazy"
+                />
+              </div>
+              <div className="absolute -bottom-4 -right-4 bg-gray-900 text-white px-5 py-4 hidden sm:block">
+                <span className="block text-2xl font-display font-bold text-orange-500">15+</span>
+                <span className="block text-[10px] font-mono tracking-widest uppercase text-gray-300">Years Building</span>
+              </div>
+            </div>
           </div>
-          
-          <div className="lg:col-span-7 font-sans text-gray-700 space-y-6 text-base md:text-lg font-light leading-relaxed">
+
+          <div className="lg:col-span-7 font-sans text-gray-700 space-y-6 text-base md:text-lg font-light leading-relaxed lg:pt-[4.5rem]">
             <p>
               Founded in 2010, Hove Construction was born from a singular conviction: that high-end, ambitious architectural designs should be engineered and executed without compromise. We refuse to let structural hurdles dilute design elegance.
             </p>
             <p>
               By combining our own deep-rooted structural contracting expertise with advanced digital modeling and in-house architectural oversight, we deliver monolithic concrete villas, complex structural frames, and flagship commercial envelopes. Every joint, pour, and material selection is executed to millimeter tolerances.
+            </p>
+            <p>
+              Based in Harare and building across Zimbabwe, our teams pair local site knowledge with international construction standards &mdash; so every client, from private homeowners to corporate developers, gets a partner who understands both the terrain and the ambition.
             </p>
           </div>
         </div>

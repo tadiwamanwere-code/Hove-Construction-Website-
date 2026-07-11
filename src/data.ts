@@ -1,7 +1,15 @@
 import { Project, Service, Value, ProcessStep, Testimonial } from './types';
+import heroImage from './assets/images/hero_construction_1783762476247.jpg';
+import craftImage from './assets/images/construction_craft_1783762518937.jpg';
+import residentialImage from './assets/images/residential_completed_1783762489562.jpg';
+import commercialImage from './assets/images/commercial_completed_1783762503146.jpg';
+
+export const ABOUT_IMAGE = craftImage;
+export const PROCESS_IMAGE = residentialImage;
+export const SERVICES_IMAGE = commercialImage;
 
 export const HERO_DATA = {
-  bgImage: "/src/assets/images/hero_construction_1783762476247.jpg",
+  bgImage: heroImage,
   tagline: "CRAFTING LUXURY ARCHITECTURE",
   headline: "Building Beyond Blueprints",
   subheadline: "Award-winning design-build and construction services for premium residential & commercial spaces. Est. 2010.",

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hove-construction.vercel.app/sitemap.xml

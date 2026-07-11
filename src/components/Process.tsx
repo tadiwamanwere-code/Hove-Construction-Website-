@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Clock, Hammer, ClipboardCheck, Trophy } from 'lucide-react';
-import { PROCESS_STEPS } from '../data';
+import { PROCESS_STEPS, PROCESS_IMAGE } from '../data';
 
 export default function Process() {
   const [activeStep, setActiveStep] = useState<number>(0);
@@ -23,6 +23,17 @@ export default function Process() {
 
   return (
     <section id="process" className="py-24 md:py-32 bg-[#0B0C0E] text-white relative overflow-hidden">
+      {/* Background Texture Image */}
+      <div className="absolute inset-0 pointer-events-none select-none">
+        <img
+          src={PROCESS_IMAGE}
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover opacity-[0.07] grayscale"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0C0E] via-[#0B0C0E]/95 to-[#0B0C0E]" />
+      </div>
       {/* Structural visual accents */}
       <div className="absolute top-1/2 left-0 w-full h-[1px] bg-white/5 -translate-y-1/2 z-0" />
       <div className="absolute top-0 left-1/4 w-[1px] h-full bg-white/5 z-0" />

@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { Home, Briefcase, Compass, Hammer, ChevronDown, CheckCircle2 } from 'lucide-react';
-import { SERVICES_DATA } from '../data';
+import { SERVICES_DATA, SERVICES_IMAGE } from '../data';
 
 export default function Services() {
   const [expandedId, setExpandedId] = useState<string | null>('residential');
@@ -23,6 +23,17 @@ export default function Services() {
 
   return (
     <section id="services" className="py-24 md:py-32 bg-[#0B0C0E] text-white overflow-hidden relative">
+      {/* Background Texture Image */}
+      <div className="absolute inset-0 pointer-events-none select-none">
+        <img
+          src={SERVICES_IMAGE}
+          alt=""
+          aria-hidden="true"
+          className="w-full h-full object-cover opacity-[0.08] grayscale"
+          loading="lazy"
+        />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0B0C0E] via-[#0B0C0E]/95 to-[#0B0C0E]" />
+      </div>
       {/* Background Subtle Elements */}
       <div className="absolute top-0 right-0 w-96 h-96 bg-orange-600/5 rounded-full blur-[120px] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-96 h-96 bg-zinc-800/20 rounded-full blur-[120px] pointer-events-none" />

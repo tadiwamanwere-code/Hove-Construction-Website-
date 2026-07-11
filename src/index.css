@@ -27,3 +27,8 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Offset anchored sections so the fixed navbar never covers section headings */
+section[id] {
+  scroll-margin-top: 88px;
+}
+
