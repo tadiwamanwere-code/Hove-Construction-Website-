@@ -9,7 +9,7 @@ export default function Contact() {
     email: '',
     phone: '',
     projectType: 'residential',
-    budget: '$1M - $2M',
+    budget: '$10k - $50k',
     description: '',
   });
 
@@ -49,7 +49,7 @@ export default function Contact() {
         email: '',
         phone: '',
         projectType: 'residential',
-        budget: '$1M - $2M',
+        budget: '$10k - $50k',
         description: '',
       });
     }, 1800);
@@ -295,7 +295,7 @@ export default function Contact() {
                       Target Budget Range
                     </label>
                     <div className="grid grid-cols-3 gap-3">
-                      {['Under $1M', '$1M - $3M', '$3M+'].map((range) => (
+                      {['Under $10k', '$10k - $50k', '$50k+'].map((range) => (
                         <button
                           key={range}
                           type="button"

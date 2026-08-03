@@ -1,5 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import stageStructure from '../assets/images/hove-roof-truss-erection.jpg';
+import stageComplete from '../assets/images/hove-precast-cottage-blue-roof.jpg';
 import { Sliders, X, Calendar, MapPin, DollarSign, User, Maximize2, Layers } from 'lucide-react';
 import { PROJECTS_DATA } from '../data';
 import { Project } from '../types';
@@ -107,17 +109,16 @@ export default function Projects() {
             
             <div className="lg:col-span-4 space-y-4">
               <span className="px-2 py-0.5 bg-orange-50 text-orange-600 text-[9px] font-mono tracking-widest uppercase border border-orange-100">
-                ACTIVE ENGINEERING HIGHLIGHT
+                HOW THE SYSTEM GOES UP
               </span>
               <h3 className="text-xl md:text-2xl font-display font-bold text-gray-900 tracking-tight">
-                Borrowdale Villa Renovation Reveal
+                From Panels and Trusses to Finished Build
               </h3>
               <p className="text-xs md:text-sm text-gray-600 font-sans font-light leading-relaxed">
-                We stabilized the structural cantilevers of a vintage shell in Borrowdale, Harare, before casting raw board-formed concrete and installing custom panoramic glazing. 
-              </p>
+                Drag the slider to see the two stages of a precast build. Left: wall panels erected and the timber hip-truss structure braced, before any sheeting. Right: a completed cottage, sheeted, glazed and standing on its finished apron. Two different sites, one build system. </p>
               <div className="text-xs text-gray-500 font-mono space-y-1">
-                <p>● Left: Raw Vintage Structure (Before)</p>
-                <p>● Right: Luxury Villa Completed (After)</p>
+                <p>● Left: Panels erected, trusses braced</p>
+                <p>● Right: Sheeted, glazed and handed over</p>
               </div>
               <div className="pt-4">
                 <span className="text-[10px] font-mono text-orange-600 animate-pulse tracking-widest">
@@ -137,15 +138,15 @@ export default function Projects() {
               >
                 {/* After Image (Full Base) */}
                 <img
-                  src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200"
-                  alt="Borrowdale Villa Completed"
+                  src={stageComplete}
+                  alt="Completed precast cottage with hip roof in blue IBR sheeting"
                   className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                   referrerPolicy="no-referrer"
                 />
                 
                 {/* After Text Label */}
                 <div className="absolute right-4 bottom-4 z-20 px-3 py-1 bg-black/70 backdrop-blur-sm text-[10px] font-mono text-white tracking-widest uppercase">
-                  AFTER: HOVE COMPLETED BUILD
+                  STAGE 02 — SHEETED &amp; COMPLETE
                 </div>
 
                 {/* Before Image (Overlay clipped by percentage) */}
@@ -154,15 +155,15 @@ export default function Projects() {
                   style={{ clipPath: `polygon(0 0, ${sliderPosition}% 0, ${sliderPosition}% 100%, 0 100%)` }}
                 >
                   <img
-                    src="https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&q=80&w=1200"
-                    alt="Borrowdale Villa Before"
+                    src={stageStructure}
+                    alt="Precast wall panels erected with timber roof trusses in place, before sheeting"
                     className="absolute inset-0 w-full h-full object-cover pointer-events-none"
                     style={{ width: sliderContainerRef.current?.getBoundingClientRect().width }}
                     referrerPolicy="no-referrer"
                   />
                   {/* Before Text Label */}
                   <div className="absolute left-4 bottom-4 z-20 px-3 py-1 bg-black/70 backdrop-blur-sm text-[10px] font-mono text-white tracking-widest uppercase">
-                    BEFORE: ORIGINAL STRUCTURE
+                    STAGE 01 — PANELS &amp; TRUSSES
                   </div>
                 </div>
 

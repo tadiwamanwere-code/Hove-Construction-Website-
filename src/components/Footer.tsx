@@ -1,5 +1,6 @@
-import { Hammer, ArrowUp, ArrowUpRight } from 'lucide-react';
+import { ArrowUp, ArrowUpRight } from 'lucide-react';
 import { CONTACT_INFO } from '../data';
+import logo from '../assets/images/hove-logo-400.png';
 
 interface FooterProps {
   onNavigate: (sectionId: string) => void;
@@ -22,20 +23,16 @@ export default function Footer({ onNavigate }: FooterProps) {
               onClick={() => onNavigate('home')}
               className="flex items-center gap-3 group text-left cursor-pointer"
             >
-              <div className="w-9 h-9 border border-white/20 flex items-center justify-center transition-all duration-300 group-hover:border-orange-500 bg-white/5">
-                <Hammer className="w-4 h-4 text-white group-hover:text-orange-500" />
-              </div>
-              <div>
-                <span className="font-display font-bold tracking-widest text-lg text-white block">
-                  HOVE
-                </span>
-                <span className="text-[9px] font-mono tracking-[0.25em] text-gray-400 block -mt-1 group-hover:text-orange-500 transition-colors">
-                  CONSTRUCTION
-                </span>
-              </div>
+              <img
+                src={logo}
+                alt="Hove Construction"
+                width={400}
+                height={228}
+                className="h-14 w-auto transition-all duration-300 group-hover:brightness-110"
+              />
             </button>
             <p className="text-xs md:text-sm font-sans text-gray-400 font-light leading-relaxed max-w-sm">
-              Premium, minimalist construction services. Translating complex structural loads and architectural visions into flawless physical monuments since 2010.
+              Precast concrete panel construction across Zimbabwe. Wall panels, roofing, slabs and paving &mdash; built on site, to spec, in weeks rather than months.
             </p>
           </div>
 

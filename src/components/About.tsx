@@ -35,18 +35,18 @@ export default function About() {
                 />
               </div>
               <div className="absolute -bottom-4 -right-4 bg-gray-900 text-white px-5 py-4 hidden sm:block">
-                <span className="block text-2xl font-display font-bold text-orange-500">15+</span>
-                <span className="block text-[10px] font-mono tracking-widest uppercase text-gray-300">Years Building</span>
+                <span className="block text-2xl font-display font-bold text-orange-500">PRECAST</span>
+                <span className="block text-[10px] font-mono tracking-widest uppercase text-gray-300">Panel Systems</span>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-7 font-sans text-gray-700 space-y-6 text-base md:text-lg font-light leading-relaxed lg:pt-[4.5rem]">
             <p>
-              Founded in 2010, Hove Construction was born from a singular conviction: that high-end, ambitious architectural designs should be engineered and executed without compromise. We refuse to let structural hurdles dilute design elegance.
+              Hove Construction builds with precast concrete panels. Walls are cast and cured off site under controlled conditions, then delivered and set into cast-in-place columns on a slab we pour ourselves. It is a faster way to build, and a more predictable one.
             </p>
             <p>
-              By combining our own deep-rooted structural contracting expertise with advanced digital modeling and in-house architectural oversight, we deliver monolithic concrete villas, complex structural frames, and flagship commercial envelopes. Every joint, pour, and material selection is executed to millimeter tolerances.
+              We take on complete structures &mdash; homes and cottages, classroom and dormitory blocks, staff housing &mdash; along with the work that surrounds them: timber roof trusses, IBR sheeting, floor slabs, aprons, driveways and boundary walling. One team, from setting out to handover.
             </p>
             <p>
               Based in Harare and building across Zimbabwe, our teams pair local site knowledge with international construction standards &mdash; so every client, from private homeowners to corporate developers, gets a partner who understands both the terrain and the ambition.

@@ -1,34 +1,47 @@
 import { Project, Service, Value, ProcessStep, Testimonial } from './types';
-import heroImage from './assets/images/hero_construction_1783762476247.jpg';
-import craftImage from './assets/images/construction_craft_1783762518937.jpg';
-import residentialImage from './assets/images/residential_completed_1783762489562.jpg';
-import commercialImage from './assets/images/commercial_completed_1783762503146.jpg';
+import cottageBlueRoof from './assets/images/hove-precast-cottage-blue-roof.jpg';
+import verandaUnit from './assets/images/hove-precast-veranda-unit.jpg';
+import slabPour from './assets/images/hove-site-slab-pour.jpg';
+import pavedDriveway from './assets/images/hove-paved-driveway-garage.jpg';
+import institutionalBlock from './assets/images/hove-institutional-block.jpg';
+import compactUnit from './assets/images/hove-compact-unit.jpg';
+import trussErection from './assets/images/hove-roof-truss-erection.jpg';
 
-export const ABOUT_IMAGE = craftImage;
-export const PROCESS_IMAGE = residentialImage;
-export const SERVICES_IMAGE = commercialImage;
+// ============================================================
+// Content layer.
+//
+// Every photograph below is Hove Construction own site photography,
+// supplied by the business. Captions describe only what is visible in
+// the frame - build method, structure type, stage of works. Client
+// names, contract values and floor areas are deliberately absent
+// because they were not supplied; add them only when confirmed.
+// ============================================================
+
+export const ABOUT_IMAGE = slabPour;
+export const PROCESS_IMAGE = trussErection;
+export const SERVICES_IMAGE = institutionalBlock;
 
 export const HERO_DATA = {
-  bgImage: heroImage,
-  tagline: "CRAFTING LUXURY ARCHITECTURE",
-  headline: "Building Beyond Blueprints",
-  subheadline: "Award-winning design-build and construction services for premium residential & commercial spaces. Est. 2010.",
-  ctaPrimary: "Start Your Project",
-  ctaSecondary: "View Our Work"
+  bgImage: cottageBlueRoof,
+  tagline: "PRECAST CONCRETE CONSTRUCTION",
+  headline: "Built in Panels. Finished in Weeks.",
+  subheadline: "Precast wall panels, roofing, slabs and paving for homes, schools and commercial sites across Zimbabwe.",
+  ctaPrimary: "Request a Quote",
+  ctaSecondary: "See Our Work"
 };
 
 export const VALUES_DATA: Value[] = [
   {
-    title: "Uncompromising Precision",
-    description: "We work to millimeter tolerances. From structural foundation pouring to final cabinetry joinery, precision is our baseline."
+    title: "Speed Without Shortcuts",
+    description: "Panels are cast, cured and quality-checked before they reach your site. What would take months in brick goes up in weeks, because most of the work is already done when the truck arrives."
   },
   {
-    title: "Architectural Integrity",
-    description: "We translate challenging architectural designs with complete fidelity, respecting the material choice, structural lines, and aesthetic vision."
+    title: "Built for Zimbabwean Sites",
+    description: "Rural stands, sloping ground, remote plots far from a batching plant. Our panels travel to where the job is, and our teams set them on a slab we pour ourselves."
   },
   {
-    title: "Absolute Transparency",
-    description: "Clear communication, online portal tracking, fixed milestones, and honest material specifications. No hidden fees or unexpected changes."
+    title: "A Price That Holds",
+    description: "Panel counts, roof sheeting and slab area are measurable before we start. You get an itemised quote up front, and it is the quote you pay."
   }
 ];
 
@@ -36,49 +49,49 @@ export const SERVICES_DATA: Service[] = [
   {
     id: "residential",
     iconName: "Home",
-    title: "High-End Residential",
-    description: "Custom architect-designed estates, luxury villas, and brutalist concrete residences crafted to perfection.",
+    title: "Precast Homes & Cottages",
+    description: "Complete single-storey homes, cottages and garden flats built from precast concrete wall panels on a poured slab.",
     details: [
-      "Monolithic raw concrete pouring and texturing",
-      "Structural timber, steel cantilevers, and hidden frames",
-      "Seamless indoor-outdoor sliding glass facades",
-      "High-efficiency thermal and acoustic insulation integration"
+      "Precast wall panels set into cast-in-place columns",
+      "Reinforced floor slab, poured and cured on site",
+      "Aluminium sliding windows and steel or timber doors",
+      "Hip, gable or mono-pitch roofs in IBR sheeting"
     ]
   },
   {
     id: "commercial",
     iconName: "Briefcase",
-    title: "Commercial & Corporate",
-    description: "Premium office spaces, flagship retail stores, and boutique corporate buildings with strong architectural identities.",
+    title: "Schools & Institutional Blocks",
+    description: "Long-span classroom blocks, dormitories, clinics and staff housing where a fast, repeatable build matters more than a bespoke one.",
     details: [
-      "Multi-story structural steel work",
-      "Glass curtain walls and facade systems",
-      "Custom acoustic treatment and light routing",
-      "Fast-track construction schedules with strict delivery penalties"
+      "Multi-room blocks built from a repeating panel module",
+      "Gable roof structures over long spans",
+      "Steel-framed windows and institutional-grade doors",
+      "Phased handover so early rooms can be occupied first"
     ]
   },
   {
     id: "design-build",
     iconName: "Compass",
-    title: "Design-Build Integration",
-    description: "A single point of accountability from initial architectural sketches and permits through construction to final key delivery.",
+    title: "Roofing & Structural Timber",
+    description: "Timber truss fabrication and roof sheeting, supplied and fitted as part of a build or as a standalone contract.",
     details: [
-      "In-house drafting, engineering, and spatial design",
-      "Permit filing, zoning reviews, and regulatory clearance",
-      "Cost-optimized material selection during design",
-      "Pre-construction feasibility studies and 3D rendering"
+      "Hip and gable truss sets cut and assembled on site",
+      "Purlins, bracing and wall plate fixing",
+      "IBR and corrugated sheeting in colour or galvanised",
+      "Ridging, flashing, barge boards and rainwater goods"
     ]
   },
   {
     id: "renovations",
     iconName: "Hammer",
-    title: "Architectural Renovations",
-    description: "Revitalizing heritage spaces, brutalist renovations, and transforming raw industrial assets into premium functional volumes.",
+    title: "Slabs, Paving & External Works",
+    description: "The concrete work around the building: floor slabs, aprons, driveways, interlocking paving and boundary walling.",
     details: [
-      "Historical masonry restoration and preservation",
-      "Structural underpinning and layout reconfiguration",
-      "Complete system upgrades (electrical, smart automation, HVAC)",
-      "High-finish surface upgrades with matching materials"
+      "Reinforced floor slabs and surface beds",
+      "Interlocking paver driveways and hardstandings",
+      "Concrete aprons, walkways and vehicle crossings",
+      "Precast durawall boundary walling and gate piers"
     ]
   }
 ];
@@ -86,131 +99,125 @@ export const SERVICES_DATA: Service[] = [
 export const PROCESS_STEPS: ProcessStep[] = [
   {
     step: "01",
-    title: "Consultation & Feasibility",
-    description: "We review your architectural concepts, site conditions, zoning regulations, and target budget to establish project parameters.",
-    duration: "1 - 2 Weeks",
-    deliverables: ["Site inspection summary", "Pre-construction schedule estimate", "Preliminary budget outlines"]
+    title: "Site Visit & Quote",
+    description: "We walk the stand, check access for the delivery truck, confirm ground conditions and measure the footprint. You get an itemised written quote covering panels, slab, roof and labour.",
+    duration: "3 - 7 Days",
+    deliverables: ["Site and access assessment", "Measured panel and sheeting schedule", "Itemised fixed-price quote"]
   },
   {
     step: "02",
-    title: "Design & Engineering",
-    description: "Our engineers and designers work in partnership with you to finalize blueprints, load calculations, custom material orders, and municipal permits.",
-    duration: "4 - 8 Weeks",
-    deliverables: ["Approved structural blueprints", "Interior surface & finish specifications", "Final fixed-price quote and timeline"]
+    title: "Casting & Slab Prep",
+    description: "Your panels are cast and left to cure while we clear the site, set out the footprint and pour the reinforced floor slab. The two run in parallel, which is where the time is saved.",
+    duration: "2 - 4 Weeks",
+    deliverables: ["Panels cast and curing", "Foundation trenches and reinforcement", "Floor slab poured and cured"]
   },
   {
     step: "03",
-    title: "Precision Build",
-    description: "Our certified operators and master craftsmen execute the layout, foundations, framing, envelope, and precise custom finishes under strict supervision.",
-    duration: "6 - 12 Months",
-    deliverables: ["Bi-weekly drone progress videos", "Completed inspections at each major phase", "Site access logs and quality assurance sign-offs"]
+    title: "Panel Erection & Roofing",
+    description: "Panels are delivered, set into position and locked into cast columns. Timber trusses go up next, then purlins, then sheeting, until the structure is closed and weathertight.",
+    duration: "1 - 3 Weeks",
+    deliverables: ["Walls erected and joints sealed", "Truss structure erected and braced", "Roof sheeted, ridged and flashed"]
   },
   {
     step: "04",
-    title: "Handover & Support",
-    description: "A comprehensive final walkthrough is conducted. We deliver keys, equipment warranties, structural certificates, and offer a dedicated post-handover warranty.",
+    title: "Finishes & Handover",
+    description: "Windows and doors are fitted, the apron and any paving is laid, the site is cleared and we walk the building with you before handing over the keys.",
     duration: "1 - 2 Weeks",
-    deliverables: ["Operation manuals and warranties", "Occupancy permit delivery", "10-year structural warranty certificate"]
+    deliverables: ["Windows, doors and ironmongery fitted", "Apron, walkways and paving complete", "Joint walkthrough and handover"]
   }
 ];
 
+// Projects describe only what is visible in each photograph. Client names,
+// contract values and floor areas were not supplied and are therefore not
+// claimed. Location is the general area; replace with the exact site once
+// the business confirms it.
 export const PROJECTS_DATA: Project[] = [
   {
     id: "hove-01",
-    title: "The Borrowdale Villa",
+    title: "Three-Bedroom Precast Cottage",
     category: "residential",
-    categoryLabel: "High-End Residential",
-    description: "A modern concrete-and-glass architectural masterwork featuring dramatic cantilevers, massive raw board-formed concrete walls, and triple-glazed frameless glass facades that capture panoramic valley views.",
-    afterImage: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=1200",
-    beforeImage: "https://images.unsplash.com/photo-1590069261209-f8e9b8642343?auto=format&fit=crop&q=80&w=1200", // Vintage raw state
-    year: "2024",
-    location: "Borrowdale, Harare",
-    client: "Chigumba Estates Ltd",
-    area: "6,500 sq ft",
-    budget: "$4.8M",
-    highlights: ["Board-formed architectural concrete", "22-foot glass sliding panels", "Geothermal climate control", "Cantilevered infinity-edge lap pool"]
+    categoryLabel: "Precast Homes & Cottages",
+    description: "A completed single-storey home in precast wall panels on a poured slab, finished with a hip roof in blue IBR sheeting, wide aluminium sliding windows and a wrapped concrete apron. Photographed on handover, before landscaping.",
+    afterImage: cottageBlueRoof,
+    year: "2025",
+    location: "Zimbabwe",
+    client: "Private client",
+    area: "On request",
+    budget: "On request",
+    highlights: ["Precast panel walls with cast-in columns", "Hip roof in colour-bonded IBR sheeting", "Full-perimeter concrete apron", "Aluminium sliding window sets"]
   },
   {
     id: "hove-02",
-    title: "Milton Corporate Tower",
+    title: "Classroom Block, Hillside Site",
     category: "commercial",
-    categoryLabel: "Commercial & Corporate",
-    description: "A stunning corporate headquarters facade renovation utilizing structural steel framing, customized tinted thermal panels, and geometric concrete architectural fins.",
-    afterImage: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-    year: "2023",
-    location: "Milton Park, Harare",
-    client: "Apex Zimbabwe Partners",
-    area: "24,000 sq ft",
-    budget: "$3.2M",
-    highlights: ["Custom powder-coated architectural fins", "Low-emissivity smart glass envelope", "Integrated structural steel support matrix", "LEED Gold certified envelope"]
+    categoryLabel: "Schools & Institutional Blocks",
+    description: "A long-span institutional block built from a repeating precast panel module on a sloping, rock-strewn site. Twin gable ends and a continuous blue IBR roof run the full length of the structure, overlooking the settlement below.",
+    afterImage: institutionalBlock,
+    year: "2025",
+    location: "Zimbabwe",
+    client: "Institutional client",
+    area: "On request",
+    budget: "On request",
+    highlights: ["Repeating panel module across a long span", "Twin gable ends with continuous ridge", "Built on a sloping granite site", "Steel-framed classroom windows"]
   },
   {
     id: "hove-03",
-    title: "The Vumba Atrium Pavilion",
-    category: "design-build",
-    categoryLabel: "Design-Build Integration",
-    description: "A luxury design-build project combining rustic timber craftsmanship with modern industrial aesthetics, blending into the lush forest surroundings.",
-    afterImage: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=1200",
-    year: "2025",
-    location: "Vumba, Mutare",
-    client: "Nyanga Highlands Development",
-    area: "4,200 sq ft",
-    budget: "$2.5M",
-    highlights: ["Exposed reclaimed red cedar trusses", "Hand-welded matte black structural steel connections", "Custom floating concrete stairs", "Floor-to-ceiling glass atrium core"]
+    title: "Veranda Unit, Arid Stand",
+    category: "residential",
+    categoryLabel: "Precast Homes & Cottages",
+    description: "A precast unit with a covered veranda running the length of the front elevation, carried on exposed timber beams under a mono-pitch roof. The concrete apron extends past the veranda to form a hardstanding.",
+    afterImage: verandaUnit,
+    year: "2024",
+    location: "Zimbabwe",
+    client: "Private client",
+    area: "On request",
+    budget: "On request",
+    highlights: ["Mono-pitch roof on exposed timber beams", "Full-length covered veranda", "Extended concrete apron and hardstanding", "Sliding window sets throughout"]
   },
   {
     id: "hove-04",
-    title: "Avondale Creative Studio",
+    title: "Interlocking Paver Driveway",
     category: "renovation",
-    categoryLabel: "Architectural Renovations",
-    description: "A high-end structural restoration and retrofit of a vintage industrial warehouse into a premium creative office space.",
-    afterImage: "https://images.unsplash.com/photo-1504307651254-35680f356dfd?auto=format&fit=crop&q=80&w=1200",
-    beforeImage: "https://images.unsplash.com/photo-1581094288338-2314dddb7ecc?auto=format&fit=crop&q=80&w=1200",
+    categoryLabel: "Slabs, Paving & External Works",
+    description: "A double-width driveway and garage forecourt laid in interlocking pavers, banded in charcoal against a red field, with a kerbed edge separating the drive from the lawn and a concrete crossing into the garages.",
+    afterImage: pavedDriveway,
     year: "2024",
-    location: "Avondale, Harare",
-    client: "Nkata Media Group",
-    area: "3,100 sq ft",
-    budget: "$1.4M",
-    highlights: ["Historical brickwork restoration", "Brushed white oak ceiling panels", "Raw structural steel column stabilization", "Integrated bespoke kitchen monolith in concrete"]
+    location: "Zimbabwe",
+    client: "Private client",
+    area: "On request",
+    budget: "On request",
+    highlights: ["Interlocking pavers in a two-tone banded pattern", "Kerbed edging to lawn", "Double garage forecourt and crossing", "Falls set for surface drainage"]
+  },
+  {
+    id: "hove-05",
+    title: "Compact Precast Unit",
+    category: "residential",
+    categoryLabel: "Precast Homes & Cottages",
+    description: "A compact precast unit on an open plain, built as a single run of panels under a shallow mono-pitch roof with a stepped return at the end elevation. Top-hung windows and a separate external door serve the rear room.",
+    afterImage: compactUnit,
+    year: "2025",
+    location: "Zimbabwe",
+    client: "Private client",
+    area: "On request",
+    budget: "On request",
+    highlights: ["Single-run panel construction", "Shallow mono-pitch roof with boxed fascia", "Stepped return at the end elevation", "Top-hung and sliding window mix"]
   }
 ];
 
-export const TESTIMONIALS_DATA: Testimonial[] = [
-  {
-    id: "t-01",
-    quote: "Working with Hove Construction was a revelation. Their commitment to architectural fidelity and millimeter-level accuracy is unmatched. They built our monolith home exactly as the architect envisioned—no compromises, no shortcuts.",
-    author: "Grace Chigumba",
-    role: "Director, Chigumba Estates Ltd",
-    project: "The Borrowdale Villa",
-    rating: 5
-  },
-  {
-    id: "t-02",
-    quote: "As developers, we've dealt with numerous general contractors. Hove stands out for their absolute commercial transparency. Their site managers review schedules daily and their online coordination portal kept us in the loop at every concrete pour.",
-    author: "Richard Nkomo",
-    role: "Managing Partner, Apex Zimbabwe Partners",
-    project: "Milton Corporate Tower",
-    rating: 5
-  },
-  {
-    id: "t-03",
-    quote: "The design-build team at Hove Construction took our abstract forest pavilion concept and turned it into an award-winning architectural masterpiece. The timber details, the custom hand-welded steel, and the floating stairs are sheer works of art.",
-    author: "Tendai Maposa",
-    role: "Trustee, Nyanga Highlands Development",
-    project: "The Vumba Atrium Pavilion",
-    rating: 5
-  }
-];
+// No testimonials are published. The section is hidden until real, attributed
+// quotes are supplied with the client permission to use them.
+export const TESTIMONIALS_DATA: Testimonial[] = [];
 
 export const CONTACT_INFO = {
-  phone: "+263 242 555 4683",
-  email: "projects@hoveconstruction.co.zw",
-  officeAddress: "42 Samora Machel Avenue, Harare, Zimbabwe",
+  // TODO: confirm every field below with the business before launch.
+  phone: "+263 77 000 0000",
+  email: "info@hoveconstruction.co.zw",
+  officeAddress: "Harare, Zimbabwe",
   hours: "Monday - Friday: 8:00 AM - 5:00 PM (CAT)",
   socials: {
     instagram: "https://instagram.com/hoveconstruction",
     linkedin: "https://linkedin.com/company/hoveconstruction",
-    archdaily: "https://archdaily.com/hove-construction"
+    archdaily: ""
   },
   coordinates: {
     lat: -17.82485,

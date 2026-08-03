@@ -49,10 +49,10 @@ export default function Services() {
             </span>
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold tracking-tight text-white mb-6">
-            Millimeter Accuracy. <br />Architectural Mastery.
+            Cast Off Site. <br />Erected On Yours.
           </h2>
           <p className="text-sm sm:text-base font-sans text-gray-400 font-light leading-relaxed">
-            Hove Construction provides specialized engineering and contracting models tailored specifically for complex, high-finish architectural statements.
+            Four things we are asked for most &mdash; taken on as a whole building, or any single part of it as a standalone contract.
           </p>
         </div>
 

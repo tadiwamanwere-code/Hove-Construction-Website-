@@ -8,6 +8,7 @@ import Process from './components/Process';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import { TESTIMONIALS_DATA } from './data';
 
 export default function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -24,7 +25,8 @@ export default function App() {
   // Scroll listener to update active navigation item based on current viewport
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'services', 'projects', 'process', 'testimonials', 'contact'];
+      const sections = ['home', 'about', 'services', 'projects', 'process',
+        ...(TESTIMONIALS_DATA.length > 0 ? ['testimonials'] : []), 'contact'];
       const scrollPosition = window.scrollY + window.innerHeight / 3;
 
       for (const section of sections) {

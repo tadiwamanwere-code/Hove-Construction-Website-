@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Hammer } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
+import logo from '../assets/images/hove-logo-400.png';
+import { TESTIMONIALS_DATA } from '../data';
 
 interface NavbarProps {
   activeSection: string;
@@ -30,7 +32,7 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
     { id: 'services', label: 'SERVICES' },
     { id: 'projects', label: 'PROJECTS' },
     { id: 'process', label: 'PROCESS' },
-    { id: 'testimonials', label: 'REVIEWS' },
+    ...(TESTIMONIALS_DATA.length > 0 ? [{ id: 'testimonials', label: 'REVIEWS' }] : []),
     { id: 'contact', label: 'CONTACT' },
   ];
 
@@ -55,19 +57,18 @@ export default function Navbar({ activeSection, onNavigate }: NavbarProps) {
           className="flex items-center gap-3 group text-left cursor-pointer"
           id="brand-logo-btn"
         >
-          <div className="relative w-9 h-9 border border-white/20 flex items-center justify-center transition-all duration-300 group-hover:border-orange-500 bg-white/5">
-            <Hammer className="w-4 h-4 text-white group-hover:text-orange-500 transition-colors duration-300" />
-            <div className="absolute top-0 left-0 w-1.5 h-1.5 border-t border-l border-orange-500 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-            <div className="absolute bottom-0 right-0 w-1.5 h-1.5 border-b border-r border-orange-500 opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-          </div>
-          <div>
-            <span className="font-display font-bold tracking-widest text-lg text-white block">
-              HOVE
-            </span>
-            <span className="text-[9px] font-mono tracking-[0.25em] text-gray-400 block -mt-1 group-hover:text-orange-500 transition-colors duration-300">
-              CONSTRUCTION
-            </span>
-          </div>
+          {/* The supplied logo already carries the HOVE CONSTRUCTION wordmark,
+              so it replaces the icon-plus-text lockup rather than sitting
+              beside a duplicate of itself. */}
+          <img
+            src={logo}
+            alt="Hove Construction"
+            width={400}
+            height={228}
+            className={`w-auto transition-all duration-300 group-hover:brightness-110 ${
+              isScrolled ? 'h-9 md:h-10' : 'h-11 md:h-12'
+            }`}
+          />
         </button>
 
         {/* Desktop Navigation */}
