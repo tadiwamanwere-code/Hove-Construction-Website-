@@ -6,6 +6,11 @@ import { TESTIMONIALS_DATA } from '../data';
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
+  // The carousel body indexes straight into TESTIMONIALS_DATA, so an empty
+  // array throws and takes the whole page down with it. App.tsx guards the
+  // mount as well, but this component defends itself regardless of caller.
+  const hasTestimonials = TESTIMONIALS_DATA.length > 0;
+
   const handlePrev = () => {
     setActiveIndex((prev) => (prev === 0 ? TESTIMONIALS_DATA.length - 1 : prev - 1));
   };
@@ -21,6 +26,8 @@ export default function Testimonials() {
     }, 8000);
     return () => clearInterval(timer);
   }, []);
+
+  if (!hasTestimonials) return null;
 
   return (
     <section id="testimonials" className="py-24 md:py-32 bg-[#FAF9F6] text-gray-900 overflow-hidden relative">

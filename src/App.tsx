@@ -72,8 +72,9 @@ export default function App() {
         {/* Engineering Process Steps (Charcoal Industrial Background) */}
         <Process />
 
-        {/* Testimonials Review Slider (Bone/Ivory White Background) */}
-        <Testimonials />
+        {/* Testimonials. Hidden until real attributed quotes are supplied —
+            the carousel indexes into the array and cannot render empty. */}
+        {TESTIMONIALS_DATA.length > 0 && <Testimonials />}
 
         {/* Custom Form, Location Map, and Phone Inquiries (Charcoal Industrial Background) */}
         <Contact />

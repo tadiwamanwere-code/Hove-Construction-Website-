@@ -67,9 +67,13 @@ export default function Hero({ onNavigate }: HeroProps) {
             className="text-4xl sm:text-5xl md:text-7xl font-display font-bold tracking-tight text-white mb-6 leading-[1.05]"
             id="hero-headline"
           >
-            Building Beyond <br className="hidden sm:inline" />
+            {/* Driven by HERO_DATA so the headline lives with the rest of the
+                content. Split on the first full stop: the opening clause sits
+                in white, the closing one takes the gradient. */}
+            {HERO_DATA.headline.split('. ')[0]}.{' '}
+            <br className="hidden sm:inline" />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-white via-gray-200 to-gray-400">
-              Blueprints.
+              {HERO_DATA.headline.split('. ').slice(1).join('. ')}
             </span>
           </motion.h1>
 
