@@ -98,6 +98,8 @@ export default function Hero({ onNavigate }: HeroProps) {
           >
             <a
               href="https://wa.me/263783095485"
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-4 bg-orange-600 hover:bg-orange-500 text-white font-mono text-xs tracking-widest uppercase transition-all duration-300 hover:shadow-[0_0_20px_rgba(234,88,12,0.4)] flex items-center justify-center gap-2 group cursor-pointer"
               id="hero-cta-primary"
             >

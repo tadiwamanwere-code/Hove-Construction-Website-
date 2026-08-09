@@ -112,6 +112,8 @@ export default function Contact() {
                   </span>
                   <a
                     href="https://wa.me/263783095485"
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm md:text-base font-mono text-white hover:text-orange-500 transition-colors"
                   >
                     078 309 5485
