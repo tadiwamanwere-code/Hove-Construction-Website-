@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Sliders, AlertTriangle } from 'lucide-react';
+import { Phone, Mail, MapPin, Clock, Send, CheckCircle2, Sliders, AlertTriangle, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../data';
 
 export default function Contact() {
@@ -98,6 +98,23 @@ export default function Contact() {
                     className="text-sm md:text-base font-mono text-white hover:text-orange-500 transition-colors"
                   >
                     {CONTACT_INFO.phone}
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-white/5 border border-white/10 flex items-center justify-center shrink-0">
+                  <MessageCircle className="w-5 h-5 text-orange-500" />
+                </div>
+                <div>
+                  <span className="text-[10px] font-mono text-gray-500 tracking-wider uppercase block">
+                    WHATSAPP
+                  </span>
+                  <a
+                    href="https://wa.me/263783095485"
+                    className="text-sm md:text-base font-mono text-white hover:text-orange-500 transition-colors"
+                  >
+                    078 309 5485
                   </a>
                 </div>
               </div>
